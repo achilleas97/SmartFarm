@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SmartFarm</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="assets/css/IndexStyle.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Navigation -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="assets/img/SmartFarm.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Αρχική</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#service">Λειτουργίες</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#AboutMe">Σχετικά Με</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" id="login" href="login.php">Σύνδεση</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+	
+	<div class="card bg-dark text-white">
+		<img src="assets/img/farm.png" style="height: 100%;">
+		<div class="card-img-overlay row align-items-center">
+		  	<h5 class="col-4 card-title"></h5>
+			<button type="button" id="box" class="col-4 btn btn-primary btn-lg">ΞΕΚΙΝΗΣΤΕ</button>
+			<p class="col-4 card-text"></p>
+		</div>
+	  </div>
+	<!-- Jumbotron -->
+    <div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p class="lead">Κατασκευάστε τα δικά σας συστήματα Arduino και παρακολουθείστε την χωρική παραλλακτικότητα της καλλιέργειας</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"></div>
+		</div>
+	</div>
+	
+    <!-- Welcome Section -->
+    <div class="container-fluid padding" id="service">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Λειτουργίες</h1>
+			</div>
+			<hr>
+			<div class="col-12">
+				<p class="lead">Χρησιμοποιήστε Λειτουργίες Που Σας Προσφέρει Η Εφαρμογή Για Να Αυξήστε Την Παραγωγικότητα Της Καλλιέργειας Σας</p>
+			</div>
+		</div>
+   		
+		<!-- Three Column Section -->
+		<div class="container-fluid padding">
+			<div class="row text-center padding">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<i class="fas fa-microchip"></i>
+					<h3>Συστήματα</h3>
+					<p>Δημιουργήστε ένα δίκτυο συστημάτων και παρακολουθήστε τις ανάγκες της καλλιέργειας σας μέσω αισθητήρων.</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<i class="fas fa-chart-line"></i>
+					<h3>Διαγράμματα</h3>
+					<p>Παρακολουθήστε τα δεδομένα της καλλιέργειάς σας μέσω διαγραμμάτων.</p>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<i class="fas fa-file-excel"></i>
+					<h3>Εξαγωγή Δεδομένων</h3>
+					<p>Εξάγετε τα δεδομένα σας σε excel ή cvs μορφή ώστε να τα επεξεργαστείτε με εξωτερικά εργαλεία. </p>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<i class="fas fa-edit"></i>
+					<h3>Σημειώσεις</h3>
+					<p>Κρατείστε τις δικές σας σημειώσεις που θεωρείτε σημαντικές.</p>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<i class="fas fa-bell"></i>
+					<h3>Ενημερώσεις</h3>
+					<p>Λαβάνετε άμεσα ειδοποιήσεις για τις ακραίες αλλαγές στα δεδομένα της καλλιέργειας σας στην εφαρμογή αλλά και στο λογαριασμό σας Telegram!</p>
+				</div>
+					<div class="col-sm-12 col-md-4">
+					<i class="fas fa-sun"></i>
+					<h3>Πρόβλεψη Καιρού</h3>
+					<p>Παρακολουθήστε τα μετεωρολογικά δεδομένα της περιοχής στην οποία βρίσκεται το δίκτυο σας</p>
+				</div>
+			</div>
+			<hr class="my-4">
+		</div>
+	</div>
+    
+    <!-- Two Column Section -->
+    <div class="container-fluid padding" id="AboutMe">
+		<div class="row padding">
+			<div class="col-md-12 col-lg-6">
+				<h2>Σχετικά Με Το Project</h2>
+				<p> Το project υλοποιήθηκε στα πλαίσια της πτυχιακής εργασίας των φοιτητών του Πανεπιστημίου Θεσσαλίας του τμήματος Μηχανικών Πληροφορικής, Δρένο Αχιλλέα και Παλλημάρκο Σωτήριο.  
+					Η εφαρμογή και το σύστημα βρίσκονται ακόμη σε πειραματικό στάδιο!</p> 
+				<p>	Πρόκειται για ένα σύστημα παρακολούθησης της χωρικής παραλλακτικότητας. 
+					Το σύστημα και η εφαρμογή προς το παρόν μπορεί να χρησιμοποιηθεί από οποιοδήποτε διαθέτει βασικές γνώσεις προγραμματισμού για μικρού μήκους καλλιέργειες οι οποίες έχουν πρόσβαση σε τοπικό δίκτυο WiFi. 
+					Τα συστήματα μπορούν να δημιουργηθούν με μικροελεγκτές Arduino.</p> 
+				<p>	Μελλοντικός στόχος μας είναι να δημιουργηθεί ένα σύστημα IOT το οποίο θα αξιοποιεί τεχνολογίες ανοικτού κώδικα. 
+					Θα δημιουργηθεί ένα δίκτυο LoRaWan ώστε να συλλέγονται τα χωρικά και περιβαλλοντικά δεδομένα από αισθητήρες και θα στέλνονται σε ένα λογισμικό ανοιχτού κώδικα. 
+					Το λογισμικό θα μπορεί να χρησιμοποιηθεί από οποιοδήποτε γεωργό ή σύμβουλο γης οι οποίοι θα παρακολουθούν και θα αξιοποιούν εργαλεία  ανάλυσης δεδομένων για την 
+					αύξηση της παραγωγικότητας της καλλιέργειας τους. </p>
+				<br>
+			</div>
+			<div class="col-lg-6">
+				<img src="assets/img/SmartFarm2.jpeg" class="img-fluid">
+			</div>
+		</div>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Ανοιχτό Λογισμικό</h5>
+					<hr class="light">
+					<img src="assets/img/Opensource.png" class="img" width="150" height=200">
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>ΚΩΔΙΚΑΣ</h5>
+					<hr class="light">
+					<p>Έχουν χρησιμοποιηθεί οι τεχνολογίες php, javaScript, Jquery, bootstrap 4 
+					Ο κώδικας είναι διαθέσιμος στο github, όπου μπορείτε να βρείτε και περισσότερες πληροφορίες</p>
+					<p>
+						<a href="https://www.php.net/"><i class="fab fa-js"></i></a>
+						<a href="https://www.javascript.com/"><i class="fab fa-php"></i></a>
+						<a href="https://github.com/achilleas97/UserSystem2"><i class="fab fa-git"></i></a>
+					</p>
+						
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Επικοινωνία</h5>
+					<hr class="light">
+					<a href="https://smartfarmptixiaki@gmail.com">Email</a>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#box").click(function() {
+				window.location='login.php';
+			});
+		});
+
+		//Get the button:
+		mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+</body>
+</html>
